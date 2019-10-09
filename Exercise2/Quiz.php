@@ -14,7 +14,7 @@
         echo "You answered: " . $_POST["course"] . "<br>";
         echo "Correct answer: Engineering Ethics" . "<br>";
 
-        if($_POST["class"] == "Engineering Ethics"){
+        if($_POST["course"] == "Engineering Ethics"){
             $counter = $counter + 1;
         }
 
@@ -41,6 +41,9 @@
         if($_POST["bowColor"] == "Red"){
             $counter = $counter + 1;
         }
+
+	echo "<br><br>" . "You answered " . $counter . "/5 questions correctly." . "<br>";
+	echo "Your score is: " . ($counter * 20) . "%";
 	
     }
 
