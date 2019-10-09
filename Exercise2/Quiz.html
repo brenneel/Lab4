@@ -1,49 +1,50 @@
 <html>
   <head>
-
+    
   </head>
 
   <body>
 
     <form action="Quiz.php" method = "post" id="quizForm">
-      Question 1: What topping does NOT go on a pizza?
+        <p id = "q1">Question 1: What topping does NOT go on a pizza?</p>
         <div class = "RadioButtons">
             <input type = "radio" name = "topping" value = "Pepperoni">Pepperoni<br>
             <input type = "radio" name = "topping" value = "Pineapple">Pineapple<br>
             <input type = "radio" name = "topping" value = "Sausage">Sausage<br>
             <input type = "radio" name = "topping" value = "Cheese">Cheese<br>
         </div>
-        Question 2: What class do EECS students get to skip that others do not?
+        <p id = "q2">Question 2: What class do EECS students get to skip that others do not?</p>
         <div class = "RadioButtons">
             <input type = "radio" name = "class" value = "English 1">English 1<br>
             <input type = "radio" name = "class" value = "Calc. 2">Calc. 2<br>
             <input type = "radio" name = "class" value = "Engineering Ethics">Engineering Ethics<br>
             <input type = "radio" name = "class" value = "Programming 1">Programming 1<br>
         </div>
-        Question 3: What are the primary colors?
+        <p id = "q3">Question 3: What are the primary colors? </p>
         <div class = "RadioButtons">
             <input type = "radio" name = "colors" value = "red blue yellow">Red Blue Yellow<br>
             <input type = "radio" name = "colors" value = "red green blue">Red Green Blue<br>
             <input type = "radio" name = "colors" value = "yellow purple red">Yellow Purple Red<br>
             <input type = "radio" name = "colors" value = "yellow red orange">Yellow Red Orange<br>
         </div>
-        Question 4: 10*2+6/3=? (Hint: PEMDAS)
+       <p id = "q4">Question 4: 10*2+6/3=? (Hint: PEMDAS)</p>
         <div class = "RadioButtons">
             <input type = "radio" name = "exp" value = "26/3">26/3<br>
             <input type = "radio" name = "exp" value = "22">22<br>
             <input type = "radio" name = "exp" value = "40">40<br>
             <input type = "radio" name = "exp" value = "18">18<br>
         </div>
-        Question 5: What is the color of Donald Duck's Bowtie?
+        <p id = "q5">Question 5: What is the color of Donald Duck's Bowtie?</p>
         <div class = "RadioButtons">
             <input type = "radio" name = "bowColor" value = "orange">Orange<br>
             <input type = "radio" name = "bowColor" value = "green">Green<br>
             <input type = "radio" name = "bowColor" value = "blue">Blue<br>
             <input type = "radio" name = "bowColor" value = "red">Red<br>
         </div>
+        <input type = "submit" name = "submit" value = "Submit Responses">
       </form>
 
-      <input type = "button" name = "submit" value = "Submit Responses" form = "quizForm">
+      
   </body>
 
 </html>
