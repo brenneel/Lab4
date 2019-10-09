@@ -5,7 +5,7 @@
 
   <body>
 
-    <form action="Quiz.php" method = "post">
+    <form action="Quiz.php" method = "post" id="quizForm">
       Question 1: What topping does NOT go on a pizza?
         <div class = "RadioButtons">
             <input type = "radio" name = "topping" value = "Pepperoni">Pepperoni<br>
@@ -43,6 +43,7 @@
         </div>
       </form>
 
+      <input type = "button" name = "submit" value = "Submit Responses" form = "quizForm">
   </body>
 
 </html>
