@@ -1,7 +1,7 @@
 <?php
 
     echo "<link rel='stylesheet' href='style.css'>";
-
+    echo "<body>";
     $disney = $_POST['disney'];
     $fett = $_POST['fett'];
     $alpha = $_POST['alpha'];
@@ -9,10 +9,13 @@
     $shipCost = $_POST['shipCost'];
     $sum = ($disney*1.5) + ($fett*6.5) + ($alpha*20);
    
-    echo "Hello There! Thank you for your purchase<br><br>";
-    echo"Here are your credentials:<br>
-        Username:" . $_POST['username'] . "<br> Password:" .  $_POST['password'] . "<br>";
-        
+    echo "<h1>Hello There! <span style = 'color:red;font-style:italic'>Thank you</span> for your purchase!</h1>";
+    echo"<h2>Here are your credentials:</h2>
+        <div id = 'credentialDiv'>
+        <span class = 'credTitle'>Username: </span><span class = 'credentialText'>" . $_POST['username'] . "</span><br> 
+        <span class = 'credTitle'>Password: </span><span class = 'credentialText'>" .  $_POST['password'] . "</span><br></div>";
+    
+    echo "<br><br><br>";
     echo "<table>";
     echo "<tr>
             <td> </td>
@@ -54,5 +57,5 @@
         </tr>";
 
     echo"</table>";
-
+    echo"</body>";
 ?>
