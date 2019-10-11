@@ -16,9 +16,8 @@ function validate(){
        return(false);
    }
 
+
     return(true);
-    
- 
 }
 
 function checkboxChecker(){
@@ -28,6 +27,7 @@ function checkboxChecker(){
        
         if(check[i].type == 'radio' && (check[i].checked ==true)){
             isChecked = true;
+            document.getElementById("shipCost").value = check[i].id;
         }
         
     }

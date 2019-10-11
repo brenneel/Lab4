@@ -6,7 +6,7 @@
     $fett = $_POST['fett'];
     $alpha = $_POST['alpha'];
     $shipping = $_POST['shipping'];
-    $shipCost = 0;
+    $shipCost = $_POST['shipCost'];
     $sum = ($disney*1.5) + ($fett*6.5) + ($alpha*20);
     function shippingCost(){
         if($shipping == "Express"){
