@@ -7,16 +7,16 @@
     $alpha = $_POST['alpha'];
     $shipping = $_POST['shipping'];
     $shipCost = 0;
-
+    $sum = ($disney*1.5) + ($fett*6.5) + ($alpha*20);
     function shippingCost(){
         if($shipping == "Express"){
-            return(5);
+            $shipCost = 5;
         }
         else if($shipping == "Overnight"){
-           return(50);
+           $shipCost = 50;
         }
         else{
-           return(0);
+          $shipCost = 0.00;
         }
     }
 
@@ -62,12 +62,11 @@
     echo "<tr>
             <td class = 'title'>Shipping</td>
             <td colspan = '2'>" . $shipping . "</td>
-            <td>$" . shippingCost(). "</td>
+            <td>$" . $shipCost . "</td>
         </tr>";
     echo "<tr>
             <td colspan = '3' class = 'title'>Total Cost</td>
-            <td>$
-    
+            <td>$" . $sum . "</td>
         </tr>";
 
     echo"</table>";
