@@ -1,10 +1,12 @@
 <html>
     <head>
-    
+    <link rel="stylesheet" href="style.css">
+    <script src=""></script>
     </head>
 
     <body>
-            <form action="customerBackend.php" method = "post" id = "submission">
+            
+            <form action="customerBackend.php" onsubmit = "submitForm();" method = "post" id = "submission">
                     Username: <input type = "text" placeholder = "username"><br>
                     Password: <input type = "text" placeholder = "password"><br><br>
 
@@ -27,10 +29,10 @@
                     <h3>Ultra-Deluxe Alphabet Sticker Pack</h3>
                     <input class = "itemBox" type = "number" id = "alpha" placeholder = "0">
                     <br>
-
+                    <br>
                     <div id = "formButtons">
-                        <input type = "button" id = "reset" value = "Reset" onclick = "refreshForm();">
-                        <input type = "button" id = "submit" value = "Submit Order" onclick = "submitForm();">
+                        <input type = "button" id = "reset" value = "Reset">
+                        <input type = "submit" id = "submit" value = "Submit Order">
                     </div>
                 </form>
                 
