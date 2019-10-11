@@ -1,0 +1,40 @@
+<html>
+    <head>
+    
+    </head>
+
+    <body>
+            <form action="customerBackend.php" method = "post" id = "submission">
+                    Username: <input type = "text" placeholder = "username"><br>
+                    Password: <input type = "text" placeholder = "password"><br><br>
+
+                    Please choose an available shipping option:<br>
+                    <div class = "radioButtons">
+                        <input type = "radio" name = "shipping" value = "free">Free 7-Day<br>
+                        <input type = "radio" name = "shipping" value = "threeDay">$5.00 3-Day<br>
+                        <input type = "radio" name = "shipping" value = "overnight">$50.00 Overnight<br>
+                    </div>
+
+                    <h2>Choose your items below:</h2>
+                    <h3>Generic Disney Stickers</h3>
+                    <input class = "itemBox"type = "number" id = "disney" placeholder = "0">
+                    <br>
+
+                    <h3>Limited-Edition Boba and Jango Fett Sticker Pack</h3>
+                    <input class = "itemBox" type = "number" id = "fett" placeholder = "0">
+                    <br>
+
+                    <h3>Ultra-Deluxe Alphabet Sticker Pack</h3>
+                    <input class = "itemBox" type = "number" id = "alpha" placeholder = "0">
+                    <br>
+
+                    <div id = "formButtons">
+                        <input type = "button" id = "reset" value = "Reset" onclick = "refreshForm();">
+                        <input type = "button" id = "submit" value = "Submit Order" onclick = "submitForm();">
+                    </div>
+                </form>
+                
+                
+    </body>
+
+</html>
