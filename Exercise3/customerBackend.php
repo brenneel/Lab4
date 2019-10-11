@@ -9,15 +9,19 @@
     $shipCost = 0;
 
     function shippingCost(){
-        if($shipping == "threeDay"){
+        if($shipping == "Express"){
             return(5);
         }
-        else if($shipping == "overnight"){
+        else if($shipping == "Overnight"){
            return(50);
         }
         else{
            return(0);
         }
+    }
+
+    function adder(){
+        return($disney*1.5 + $fett*6.5 + $alpha*20);
     }
     
 
@@ -57,9 +61,12 @@
 
     echo "<tr>
             <td class = 'title'>Shipping</td>
-            <td>" . $shipping . "</td>
+            <td colspan = '2'>" . $shipping . "</td>
             <td>$" . shippingCost(). "</td>
-
+        </tr>";
+    echo "<tr>
+            <td colspan = '3' class = 'title'>Total Cost</td>
+            <td>$
     
         </tr>";
 
