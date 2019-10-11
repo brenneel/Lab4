@@ -6,9 +6,9 @@
 
     <body>
             
-            <form action="customerBackend.php" onsubmit = "submitForm();" method = "post" id = "submission">
-                    Username: <input type = "text" placeholder = "username"><br>
-                    Password: <input type = "text" placeholder = "password"><br><br>
+            <form id = "myForm"  action="customerBackend.php"  method = "post" onsubmit = "return validate();" >
+                    Username: <input id = "username"type = "email" placeholder = "username@gmail.com"><br>
+                    Password: <input id = "password" type = "text" placeholder = "password"><br><br>
 
                     Please choose an available shipping option:<br>
                     <div class = "radioButtons">
@@ -32,11 +32,12 @@
                     <br>
                     <div id = "formButtons">
          
-                        <input type = "submit" id = "submit" value = "Submit Order">
+                        <input type = "submit" id = "buttonSubmit" value = "Order" >
                     </div>
                 </form>
                 
                 <input type = "button" id = "reset" value = "Reset" onclick = "refreshForm();">
     </body>
 
+ 
 </html>
