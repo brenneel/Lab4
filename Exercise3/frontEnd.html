@@ -5,13 +5,15 @@
     </head>
 
     <body>
+        <h1>Welcome to my <span style = "color:red;font-style:italic">Sticker Store</span>!</h1>
             
             <form id = "myForm"  action="customerBackend.php"  method = "post" onsubmit = "return validate();" >
-                    Username: <input id = "username" name = "username" type = "email" placeholder = "username@gmail.com"><br>
-                    Password: <input id = "password" type = "text" name = "password" placeholder = "password"><br><br>
-
-                    Please choose an available shipping option:<br>
-                    <div class = "radioButtons">
+                <div class = "credentialDiv">       
+                    <span class = "credTitle"> Username:</span> <input  id = "username" name = "username" type = "email" placeholder = "username@gmail.com"><br>
+                    <span class = "credTitle"> Password:</span> <input  id = "password" type = "text" name = "password" placeholder = "password"><br><br>
+                </div>
+                   <h2> Please choose an available shipping option:</h2><br>
+                    <div class = "radioButtons credentialDiv">
                         <input type = "radio" name = "shipping" value = "free" id = "0">Free 7-Day<br>
                         <input type = "radio" name = "shipping" value = "Express" id = "5">$5.00 3-Day Express<br>
                         <input type = "radio" name = "shipping" value = "Overnight" id = "50">$50.00 Overnight<br>
@@ -35,9 +37,9 @@
          
                         <input type = "submit" id = "buttonSubmit" value = "Order" >
                     </div>
-                </form>
+            </form>
                 
-                <input type = "button" id = "reset" value = "Reset" onclick = "refreshForm();">
+            <input type = "button" id = "reset" value = "Reset" onclick = "refreshForm();">
     </body>
 
  

@@ -11,7 +11,7 @@
    
     echo "<h1>Hello There! <span style = 'color:red;font-style:italic'>Thank you</span> for your purchase!</h1>";
     echo"<h2>Here are your credentials:</h2>
-        <div id = 'credentialDiv'>
+        <div class = 'credentialDiv'>
         <span class = 'credTitle'>Username: </span><span class = 'credentialText'>" . $_POST['username'] . "</span><br> 
         <span class = 'credTitle'>Password: </span><span class = 'credentialText'>" .  $_POST['password'] . "</span><br></div>";
     
