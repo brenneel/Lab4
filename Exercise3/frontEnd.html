@@ -8,12 +8,12 @@
         <h1>Welcome to my <span style = "color:red;font-style:italic">Sticker Store</span>!</h1>
             
             <form id = "myForm"  action="customerBackend.php"  method = "post" onsubmit = "return validate();" >
-                <div class = "credentialDiv">       
+                <div class = "centerDiv">       
                     <span class = "credTitle"> Username:</span> <input  id = "username" name = "username" type = "email" placeholder = "username@gmail.com"><br>
                     <span class = "credTitle"> Password:</span> <input  id = "password" type = "text" name = "password" placeholder = "password"><br><br>
                 </div>
                    <h2> Please choose an available shipping option:</h2><br>
-                    <div class = "radioButtons credentialDiv">
+                    <div class = "radioButtons centerDiv">
                         <input type = "radio" name = "shipping" value = "free" id = "0">Free 7-Day<br>
                         <input type = "radio" name = "shipping" value = "Express" id = "5">$5.00 3-Day Express<br>
                         <input type = "radio" name = "shipping" value = "Overnight" id = "50">$50.00 Overnight<br>
@@ -35,9 +35,9 @@
                         <br>
                         <br>
                     </div>
-                    <div id = "formButtons">
-                        <input type = "button" id = "reset" value = "Reset" onclick = "refreshForm();">
-                        <input type = "submit" id = "buttonSubmit" value = "Order" >
+                    <div id = "formButtonDiv">
+                        <input type = "button" class = "formButtons" id = "reset" value = "Reset" onclick = "refreshForm();">
+                        <input type = "submit" class = "formButtons" id = "buttonSubmit" value = "Order" >
                     </div>
             </form>  
     </body>
