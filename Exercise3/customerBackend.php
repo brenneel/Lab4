@@ -1,6 +1,6 @@
 <?php
 
-    echo "here is my backend, lol jokes";
+    echo "<link rel='stylesheet' href='style.css'>";
 
     $disney = $_POST['disney'];
     $fett = $_POST['fett'];
@@ -8,23 +8,7 @@
     $shipping = $_POST['shipping'];
     $shipCost = $_POST['shipCost'];
     $sum = ($disney*1.5) + ($fett*6.5) + ($alpha*20);
-    function shippingCost(){
-        if($shipping == "Express"){
-            $shipCost = 5;
-        }
-        else if($shipping == "Overnight"){
-           $shipCost = 50;
-        }
-        else{
-          $shipCost = 0.00;
-        }
-    }
-
-    function adder(){
-        return($disney*1.5 + $fett*6.5 + $alpha*20);
-    }
-    
-
+   
     echo "Hello There! Thank you for your purchase<br><br>";
     echo"Here are your credentials:<br>
         Username:" . $_POST['username'] . "<br> Password:" .  $_POST['password'] . "<br>";
